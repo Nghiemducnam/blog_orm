@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Create customer</title>
+</head>
+<body>
+<h1>Blog detail</h1>
+<p>
+    <a href="/">Back to home page</a>
+</p>
+    <table>
+        <tr>
+            <td><b>Title:</b></td>
+            <td th:text="${blog.getBlogTitle()}"></td>
+        </tr>
+        <tr>
+            <td><b> Blog Content:</b></td>
+            <td th:text="${blog.getContent()}"></td>
+        </tr>
+        <tr>
+            <td><b>Author:</b></td>
+            <td th:text="${blog.getAuthor()}"></td>
+        </tr>
+    </table>
+</body>
+</html>
